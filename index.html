@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-    $(function(){
-      
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(function() {
+      var name = ("David");
+
+      var radio = $('#color').val();
+
+      $('#button').click(function() {
+        $("button").css("background-color", "blue");
+      });
+      $('h1').fadeOut(750);
     });
-    
-    </script>
-  </head>
-  <body>
+  </script>
+
+</head>
+<style type="text/css">
+  h1 {
+    color: blue;
+  }
   
-  </body>
+  h2 {
+    color: green;
+  }
+</style>
+
+<body>
+  <h1>Sup...</h1>
+  <form>
+    <h2>Name:</h2>
+    <input id="button">
+    <button>Click Me!</button>
+    <br>
+    <input id="button2">
+    <br>
+    <input type="radio" name="color" value="red"> Red
+    <br>
+    </div>
+    <input type="radio" name="color" value="blue"> Blue
+    <br>
+    <input type="radio" name="color" value="green"> Green
+    <br>
+    <button>Change Color!</button>
+
+
+  </form>
+</body>
+
 </html>
