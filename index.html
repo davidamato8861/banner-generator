@@ -7,48 +7,42 @@
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     $(function() {
-      var name = ("David");
+      $('h1').fadeOut(800);
+    });
 
-      var radio = $('#color').val();
-
-      $('#button').click(function() {
-        $("button").css("background-color", "blue");
-      });
-      $('h1').fadeOut(750);
+    $('button').click(function() {
+      $("#button1").css("background-color", "orange");
     });
   </script>
 
 </head>
-<style type="text/css">
+<style>
   h1 {
     color: blue;
   }
   
-  h2 {
-    color: green;
+  #button1 {
+    background-color: black;
+    width: 1200px;
+    height: 300px;
   }
 </style>
 
 <body>
-  <h1>Sup...</h1>
-  <form>
-    <h2>Name:</h2>
-    <input id="button">
-    <button>Click Me!</button>
-    <br>
-    <input id="button2">
-    <br>
-    <input type="radio" name="color" value="red"> Red
-    <br>
-    </div>
-    <input type="radio" name="color" value="blue"> Blue
-    <br>
-    <input type="radio" name="color" value="green"> Green
-    <br>
-    <button>Change Color!</button>
-
-
-  </form>
+  <h1>Hey everyone!</h1> Name:
+  <br>
+  <input type="text" name="name">
+  <br> Color:
+  <br>
+  <input type="text" name="color">
+  <br> Favorite Food:
+  <br>
+  <Input type="text" name="food">
+  <br>
+  <div id="button1">
+  <button>Click me!</button>
+  </div>
+  <br>
 </body>
 
 </html>
