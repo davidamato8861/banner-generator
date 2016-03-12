@@ -6,12 +6,12 @@
   <title>Banner Generator</title>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
-    $(function() {
-      $('h1').fadeOut(800);
+    $(function() { //Begin function for header1 fadout
+      $('h1').fadeOut(800); //Select all h1 tags, and perform a function to fade tags out
     });
 
-    $('button').click(function() {
-      $("#button1").css("background-color", "orange");
+    $('button').click(function() { //Begin function for onClick
+      $("#button1").css("background-color", "orange"); //Select all buttons, then change the color of the div
     });
     
   </script>
@@ -22,7 +22,7 @@
     color: blue;
   }
   
-  #button1 {
+    #button1 {
     background-color: black;
     width: 1200px;
     height: 300px;
@@ -32,16 +32,16 @@
 <body>
   <h1>Hey everyone!</h1> Name:
   <br>
-  <input type="text" name="name">
+  <!--code for name input--><input type="text" name="name">
   <br> Color:
   <br>
-  <input type="text" name="color">
+  <!--code for color input--><input type="text" name="color">
   <br> Favorite Food:
   <br>
-  <Input type="text" name="food">
+  <!--Code for food input--><Input type="text" name="food">
   <br>
-  <button>Click me!</button>
-  <div id="button1">
+ <!--Button to generate banner image--> <button>Click me!</button>
+<!--Div to display after button click-->  <div id="button1">
   
   </div>
   <br>
